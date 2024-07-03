@@ -1,7 +1,8 @@
 import Carousel from 'react-material-ui-carousel'
-import GOT from '../assets/got.jpg';
-import Ryan from '../assets/ryan1.jpg';
-import WOLF from '../assets/wallpaperflare.com_wallpaper (1).jpg';
+import GOT from '../../assets/got.jpg';
+import Ryan from '../../assets/ryan1.jpg';
+import WOLF from '../../assets/wallpaperflare.com_wallpaper (1).jpg';
+import Zenistu from '../../assets/zenitsu.jpg';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 const items=[
@@ -16,6 +17,10 @@ const items=[
     {
         name:'Wolf',
         description: WOLF
+    },
+    {
+        name:'Zenistu',
+        description: Zenistu
     }
 ]
 
@@ -30,7 +35,7 @@ function ImageCarousel(){
         {
                 items.map( (item, i) => {
                     return(
-                        <div key={i} style={{ width:'100%',margin:'auto',height:'60vh'}}>
+                        <div key={i} className='image-carousel'>
                             <img src={item.description} style={{width:'inherit',height:'inherit'}}></img>
                         </div>
                     )

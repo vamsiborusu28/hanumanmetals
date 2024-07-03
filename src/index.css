@@ -7,17 +7,27 @@
 
 body{
   background-color: whitesmoke;
+  width: 100%
   /* color: whitesmoke; */
 }
-
+#root{
+  width: inherit;
+}
 header{
 position: sticky;
 top:0;
 z-index: 2;
 }
+.header-logo{
+  color: whitesmoke;
+  font-size: 24px;
+}
+.menu{
+  display: none;
+}
 .header-nav{
   display:flex;
-  justify-content:flex-start;
+  justify-content:space-between;
   align-items:start;
   gap:20vw;
   height:17vh;
@@ -38,35 +48,51 @@ li{
 }
 
 .nav-bar ul li{
-  font-size: 24px;
+  font-size: 20px;
 }
 
+.image-carousel{
+  width: 100%;
+  margin: auto;
+  height: 70vh;
+
+}
 .highlights{
   color: #6A6A6A;
   width: 100%;
-  margin-top: 2vh;
+  /* margin-top: 2vh; */
   line-height: 24px;
-  box-shadow: 0 0 10px #6A6A6A;
+  /* box-shadow: 0 0 10px #6A6A6A; */
+  padding: 0 2vw;
   padding-top: 5vh;
 }
 
 .company-details{
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 2vh 2vw;
 }
 
 .details{
-  width: 50%;
+  flex: 2;
+  min-width: 350px;
 }
 .details p {
   line-height: 32px;
 }
 
 .company-building{
-  height: auto;
+  /* height: auto; */
+  max-width: 600px;
+  width: 100%;
+  min-width: 350px;
+  height: 60vh;
   position: sticky;
-  top: 17vh;
+  /* top: 17vh; */
+  flex: 1;
 }
 
 
@@ -78,3 +104,89 @@ h3{
   position: sticky;
   top: 17vh;
 }
+
+
+footer{
+  background-color: rgb(3,22,64);
+  min-height: 30vh;
+  color: whitesmoke;
+  width: 100%;
+  padding: 3vh 1vw;
+}
+
+.footer-section{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3vh 2vw;
+  gap:5vh;
+}
+
+
+.content{
+  flex:1;
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2vw;
+}
+
+.social{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:2vw;
+}
+.content > ul{
+  display: flex;
+  flex-direction: column;
+  gap:4vh;
+}
+.content > ul > li:hover{
+  color: yellow;
+  cursor: pointer;
+
+}
+footer p {
+  font-size: 14px;
+  width: 60%;
+  line-height: 24px;
+}
+
+.copyright{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap:5vh;
+  margin-top: 2vh;
+}
+.copyright > div{
+  min-width: 350px;
+}
+.copyright a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+.copyright a:hover{
+  color: yellow;
+}
+@media (max-width:800px) {
+  .nav-bar{
+    display: none;
+  }
+  .menu{
+    display: block;
+  }
+  .content{
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 500px) {
+  .copyright{
+    justify-content: center;
+  }
+  
+}
+

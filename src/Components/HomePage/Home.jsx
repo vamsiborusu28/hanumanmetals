@@ -1,7 +1,7 @@
 import ImageCarousel from "./ImageCarousel";
-import Rectangle from '../assets/rectangular.jpg';
-const headindStyles={color:'whitesmoke',fontSize:'32px'}
-
+import Download from '../../assets/download.jpeg';
+// import { Menu} from '@mui/icons-material';
+import Menu from '../../assets/SVGS/Menu.svg';
 function Home(){
 
 
@@ -9,7 +9,7 @@ function Home(){
         <>
         <header>
             <div className="header-nav">
-             <h2 style={headindStyles}>Hanuman Metals</h2>
+             <h2 className="header-logo">Hanuman Metals</h2>
              <nav className="nav-bar">
                 <ul>
                     <li>Home</li>
@@ -19,8 +19,9 @@ function Home(){
                     <li>Reviews</li>
                 </ul>
              </nav>
+             <div className="menu"><img src={Menu}/></div>
+             
             </div>
-            {/* <div>Image Layout</div> */}
         </header>
         <ImageCarousel/>
         <section className="highlights">
@@ -39,11 +40,10 @@ function Home(){
                     
                 </aside>
                 <div className="company-building">
-                    <img src={Rectangle}></img>
+                    <img src={Download} style={{width:'inherit',height:'inherit'}}></img>
                 </div>
             </div>
         </section>
-        <div style={{height:'100vh'}}></div>
         </>
     )
 }

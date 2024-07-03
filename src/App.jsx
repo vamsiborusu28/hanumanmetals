@@ -1,11 +1,12 @@
-import Home from "./Components/Home"
-
+import Home from "./Components/HomePage/Home"
+import Footer from "./Components/Footer/Footer"
 
 function App() {
 
   return (
     <>
     <Home/>
+    <Footer/>
     </>
   )
 }
