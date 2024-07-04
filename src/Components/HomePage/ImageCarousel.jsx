@@ -31,7 +31,9 @@ function ImageCarousel(){
     return(
         <div>
         <Carousel NextIcon={<NavigateNextIcon/>}
-                  PrevIcon={<NavigateBeforeIcon />}>
+                  PrevIcon={<NavigateBeforeIcon />}
+            navButtonsAlwaysVisible={true}
+        >
         {
                 items.map( (item, i) => {
                     return(

@@ -43,7 +43,7 @@ function Footer(){
             </section>
             <hr></hr>
             <section className='copyright'>
-                <div>Copyright (c) {new Date().getFullYear()} - Hanuman Metel Pvt. Ltd.</div>
+                <div><i>Copyright (c) {new Date().getFullYear()} - Hanuman Metel Pvt. Ltd.</i></div>
                 <div>Designed by 
                     <a href="https://github.com/vamsiborusu28"> Vamsi Borusu</a> <span> and </span> 
                     <a href='https://github.com/vamsiborusu28'> Ganesh Javvadi</a>
